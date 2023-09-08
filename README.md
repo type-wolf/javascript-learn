@@ -1,10 +1,11 @@
-## Learn JavaScript & TypeScript Mechanism
+## Learn JavaScript & TypeScript
 
 ### Execution
 
 ```bash
 npm start {category} {dir} {fileName}
 ```
+
 -   #### `category` : The category of the file you want to run
 -   #### `dir` : Specify the directory after `src
 -   #### `fileName` : Specify the name of the file you want to run
@@ -17,9 +18,10 @@ npm start {category} {dir} {fileName}
 ├─ dist/
 ├─ src/
 │  ├── mechanism/
-│  │   └─ variable/
-│  │      └─ type.ts
-│  │      └─ README.md
+│  │   ├─ variable/
+│  │   │  └─ type.ts
+│  │   │  └─ README.md
+│  │   └─ README.md
 │  └─ index.ts
 ├─ .eslintrc.js
 ├─ .env
@@ -37,4 +39,4 @@ npm start mechanism variable type
 
 ### Learn
 
-1. [Variable](src/mechanism/variable/README.md)
+1. [Mechanism](src/mechanism/README.md)
