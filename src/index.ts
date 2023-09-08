@@ -4,8 +4,9 @@ import { spawn, ChildProcess } from 'child_process';
 // Get the path of the file to execute from the command line argument
 
 // Get the path to the file from the 3rd argument
-const dir = process.argv[2];
-const fileName = process.argv[3];
+const category = process.argv[2];
+const dir = process.argv[3];
+const fileName = process.argv[4];
 
 // If the file path is not set
 if (!dir || !fileName) {
@@ -13,7 +14,7 @@ if (!dir || !fileName) {
 	process.exit(1);
 }
 
-const scriptPath = path.resolve(`dist/${dir}`, fileName);
+const scriptPath = path.resolve(`dist/${category}/${dir}`, fileName);
 
 // File Execution
 const childProcess: ChildProcess = spawn('node', ['-r', 'dotenv/config', scriptPath], {

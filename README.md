@@ -3,9 +3,9 @@
 ### Execution
 
 ```bash
-npm start {dir} {fileName}
+npm start {category} {dir} {fileName}
 ```
-
+-   #### `category` : The category of the file you want to run
 -   #### `dir` : Specify the directory after `src
 -   #### `fileName` : Specify the name of the file you want to run
 
@@ -16,9 +16,10 @@ npm start {dir} {fileName}
 ├─ node_modules/
 ├─ dist/
 ├─ src/
-│  ├── variable/
-│  │   └─ type.ts
-│  │   └─ README.md
+│  ├── mechanism/
+│  │   └─ variable/
+│  │      └─ type.ts
+│  │      └─ README.md
 │  └─ index.ts
 ├─ .eslintrc.js
 ├─ .env
@@ -31,9 +32,9 @@ npm start {dir} {fileName}
 ```
 
 ```bash
-npm start variable type
+npm start mechanism variable type
 ```
 
 ### Learn
 
-1. [Variable](src/variable/README.md)
+1. [Variable](src/mechanism/variable/README.md)
